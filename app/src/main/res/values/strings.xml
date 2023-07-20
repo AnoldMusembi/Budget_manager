@@ -41,7 +41,7 @@
     <string name="analytics_id">UA-46701449-2</string>
     <string name="app_language">Language</string>
     <string name="app_language_text">Manage Application Language</string>
-    <string name="app_name">Budget Manager</string>
+    <string name="app_name">Expense Manager</string>
     <string name="auto_repeat">Auto Repeat</string>
     <string name="back_msg">Press once again to exit</string>
     <string name="backup">Backup</string>

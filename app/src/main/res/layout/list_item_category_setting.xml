@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.demo.example.widget.CircleImageView
+        <com.expensemanager.majhub.widget.CircleImageView
             android:id="@+id/cat_item_color"
             android:layout_width="25dp"
             android:layout_height="25dp"

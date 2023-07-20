@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.demo.example">
+    package="com.expensemanager.majhub">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -13,7 +17,7 @@
 
 
     <application
-        android:name=".DailyIncomeExpenseManager"
+        android:name="com.expensemanager.majhub.DailyIncomeExpenseManager"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon200"
@@ -23,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".dailyincomeexpensemanager.HomeActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.HomeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -34,54 +38,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dailyincomeexpensemanager.SpendingLimitActivity" />
+        <activity android:name="com.expensemanager.majhub.dailyincomeexpensemanager.SpendingLimitActivity" />
 
 
         <activity
-            android:name=".dailyincomeexpensemanager.MainActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Permissions.PermissionsActivity"
+            android:name="com.expensemanager.majhub.Permissions.PermissionsActivity"
             android:theme="@style/Permissions_TransparentTheme" />
 
         <activity
-            android:name=".dailyincomeexpensemanager.AddExpenceIncomeActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AddExpenceIncomeActivity"
             android:label="Transaction"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".dailyincomeexpensemanager.IncomeFragmentActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.IncomeFragmentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.ExpenseFragmentActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.ExpenseFragmentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.SettingActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.SettingActivity"
             android:label="@string/action_settings"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.SettingCategotyActivity"
-            android:parentActivityName=".dailyincomeexpensemanager.SettingActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.SettingCategotyActivity"
+            android:parentActivityName="com.expensemanager.majhub.dailyincomeexpensemanager.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.DetailFragmentActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.DetailFragmentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.AnalyticsFragmentActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AnalyticsFragmentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.AddEditCategory"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AddEditCategory"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".dailyincomeexpensemanager.TakeATourActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.TakeATourActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Intro" />
 
-        <receiver android:name=".dailyincomeexpensemanager.AlarmReceiver">
+        <receiver android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.DATE_CHANGED" />
@@ -89,38 +93,39 @@
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
         </receiver>
-        <service android:name=".dailyincomeexpensemanager.NotifyService" />
+        <service android:name="com.expensemanager.majhub.dailyincomeexpensemanager.NotifyService" />
 
         <activity
-            android:name=".dailyincomeexpensemanager.AccountList"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AccountList"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dailyincomeexpensemanager.AddEditAccount"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AddEditAccount"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoActionBar"/>
         <activity
-            android:name=".dailyincomeexpensemanager.CategoryTimeListFragmentActivity"
+            android:name="com.expensemanager.majhub.dailyincomeexpensemanager.CategoryTimeListFragmentActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".passcode.PinEnterActivity"
+            android:name="com.expensemanager.majhub.passcode.PinEnterActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme_NoActionBar" />
         <activity
-            android:name=".passcode.PinConfirm"
+            android:name="com.expensemanager.majhub.passcode.PinConfirm"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme_NoActionBar" />
         <activity
-            android:name=".passcode.LoginActivity"
+            android:name="com.expensemanager.majhub.passcode.LoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme_NoActionBar" />
         <activity
-            android:name=".passcode.EmailConfirm"
+            android:name="com.expensemanager.majhub.passcode.EmailConfirm"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme_NoActionBar" />

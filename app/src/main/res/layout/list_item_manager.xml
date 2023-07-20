@@ -25,7 +25,7 @@
             android:gravity="center_vertical"
             android:orientation="vertical">
 
-            <com.demo.example.widget.CircleImageView
+            <com.expensemanager.majhub.widget.CircleImageView
                 android:id="@+id/item_category"
                 android:layout_width="25dp"
                 android:layout_height="25dp"

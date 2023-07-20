@@ -58,7 +58,7 @@
                         android:background="@drawable/data_bg"
                         android:orientation="vertical">
 
-                        <com.demo.example.widget.SortListView.DragSortListView
+                        <com.expensemanager.majhub.widget.SortListView.DragSortListView
                             android:id="@+id/cat_list_expense"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                         android:background="@drawable/data_bg"
                         android:orientation="vertical">
 
-                        <com.demo.example.widget.SortListView.DragSortListView
+                        <com.expensemanager.majhub.widget.SortListView.DragSortListView
                             android:id="@+id/cat_list_income"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

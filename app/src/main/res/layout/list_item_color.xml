@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.demo.example.widget.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.expensemanager.majhub.widget.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/color_piker_color"
     android:layout_width="35dp"

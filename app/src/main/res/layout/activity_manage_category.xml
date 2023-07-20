@@ -56,7 +56,7 @@
                     android:text="@string/hint_category_color"
                     android:textStyle="bold" />
 
-                <com.demo.example.widget.CircleImageView
+                <com.expensemanager.majhub.widget.CircleImageView
                     android:id="@+id/cat_color"
                     android:layout_width="40dp"
                     android:layout_height="40dp"

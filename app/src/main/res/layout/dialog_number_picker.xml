@@ -5,7 +5,7 @@
     android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.demo.example.widget.NumberPickerButton
+    <com.expensemanager.majhub.widget.NumberPickerButton
         android:id="@+id/increment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:textColor="@android:color/primary_text_light"
         android:textSize="30sp" />
 
-    <com.demo.example.widget.NumberPickerButton
+    <com.expensemanager.majhub.widget.NumberPickerButton
         android:id="@+id/decrement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
