@@ -85,7 +85,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Intro" />
 
-        <receiver android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AlarmReceiver">
+        <receiver android:name="com.expensemanager.majhub.dailyincomeexpensemanager.AlarmReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.DATE_CHANGED" />
